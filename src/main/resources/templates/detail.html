@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-1.8.1.min.js"></script>
     <title>商品详情</title>
+
+    <style>
+        .head{width:100%;height:35px;padding-top:5px;}
+        .head .left{float:left;width:50%;height:35px;text-align: center;}
+        .head .left span{font-size: 18px;}
+        .head .left label{border-top: solid 3px #FF0066;}
+        .head .right{float:right;width:50%;height:35px;text-align: center;}
+        .head .right span{font-size: 18px;}
+        .head .right label{border-top: solid 3px #FF0066;display: none;}
+
+        .on{color:#FF0066;}
+    </style>
 </head>
 <body>
+<div class="head">
+    <div class="left" onclick="clickHead(this);">
+        <span class="on">基本信息</span>
+        <div style="height:10px;"></div>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    </div>
+    <div class="right" onclick="clickHead(this);">
+        <span>购买记录</span>
+        <div style="height:10px;"></div>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    </div>
+</div>
 
+<div id="detail" >详情</div>
+<div id="" style="display:none;">购买记录</div>
+
+<script>
+  function clickHead(obj){
+      $(obj).parent().find("span").removeClass("on");
+      $(obj).parent().find("label").hide();
+      $(obj).find("span").addClass("on");
+      $(obj).find("label").show();
+  }
+</script>
 </body>
 </html>
