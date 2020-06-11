@@ -1,7 +1,31 @@
 @charset "utf-8";
 
+/* CSS Document */
+*{ margin:0; padding:0}
+ul li{ list-style:none}
+.clear{ clear:both}
+a{ text-decoration:none; color:#666}
+img{ max-height:100%; max-width:100%; border:0}
+html,body{ font-size:100%;width:100%; /*height:100%*/}
+body{ width:100%; max-width:640px; margin:0 auto;color:#666;/*background:#f7f7f7;*/font-size:12px; overflow-x:hidden}
+p{text-align:justify}
+.kbox{ width:100%; background:#f7f7f7; height:0.4rem}
 
+/*搜索*/
+.headerbox .header .headerC0{ width:75%; margin:0 auto; height:1.8rem; line-height:1.8rem; text-align:center; background:#f7f7f7; border:1px solid #f7f7f7; box-sizing:border-box; border-radius:4px;}
+.headerbox .header .headerC0 .ssdiv{ display:block; width:100%; height:100%}
+.headerbox .header .headerC0 .ssdiv input{ float:left; width:80%; border:0; outline:none; height:1.8rem; line-height:1.8rem; color:#999; font-size:0.8rem; background:none; padding-left:0.3rem}
+.headerbox .header .headerC0 .ssdiv img{ float:right; height:1.8rem}
 
+.zjssbox{ padding:0.5rem 0.6rem; overflow:hidden; height:1.8rem}
+.zjssbox img.i1{ float:left; display:block;height: 1.1rem;margin-top: 0.2rem;}
+.zjssbox .sstxt{ height:1.8rem; line-height:1.8rem; float:left}
+.zjssbox img.i2{ float:right; display:block;height: 1.1rem;margin-top: 0.2rem;}
+
+.ssbox{ overflow:hidden; padding:0 0.6rem}
+.ssbox a{ border:1px solid #ddd; display:block; float:left; height:1.4rem; line-height:1.4rem; padding:0 0.5rem; font-size:0.75rem; margin-right:0.5rem; margin-bottom:0.5rem; border-radius:4px}
+.linebox{ padding:0 0.6rem; height:1px; padding-top:0.5rem}
+.linebox .line0{width:100%; height:1px; background:#ddd}
 
 /*footer*/
 .fbox2{ width:100%; height:2.8rem}
