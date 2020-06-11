@@ -46,4 +46,9 @@ public class SystemController {
     public String goods(ModelMap modelMap){
         return "goods";
     }
+
+    @RequestMapping("/detail")
+    public String detail(){
+        return "detail";
+    }
 }
