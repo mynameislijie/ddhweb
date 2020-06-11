@@ -76,3 +76,10 @@ function shipNum(type){
 
     }
 }
+
+function toDetail(){
+    if (top.location != self.location)
+        top.location = self.location;
+    window.location.href=getRootPath()+"/detail";
+}
+
